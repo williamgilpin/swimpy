@@ -1,6 +1,7 @@
 '''
-NOTE: This set of functions will only work on Python 2.7+ (for now) due to limitations with the
-dependency openpiv-python
+NOTE: This set of functions has only been tested on Python 2.7+, however the 
+latest versions of openpiv support Python 3. I have not yest tested this module
+with the newest openpiv version
 
 A set of tools for performing PIV and other operations on directories of images
 representing time series
