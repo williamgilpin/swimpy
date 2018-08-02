@@ -22,11 +22,11 @@ from pylab import *
 
 
 try: 
-    from scipy.misc import imresize
+    from scipy.misc import imresize, toimage
 except: 
     warnings.warn("You need to install pillow to use imresize")
 try: 
-    from scipy.misc.pilutil import imresize 
+    from scipy.misc.pilutil import imresize, toimage
 except:
     pass
 
