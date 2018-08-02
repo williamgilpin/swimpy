@@ -30,7 +30,6 @@ try:
 except:
     pass
 
-from scipy.misc import toimage
 from skimage.morphology import remove_small_holes, remove_small_objects
 from skimage import filters
 from skimage import img_as_float
