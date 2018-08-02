@@ -18,7 +18,19 @@ from matplotlib.cm import register_cmap
 # from pylab import figure, gca, imshow, subplots_adjust, margins
 from pylab import *
 
-from scipy.misc import imresize, toimage
+# note: pillow might be required to use imresize
+
+
+try: 
+    from scipy.misc import imresize
+except: 
+    warnings.warn("You need to install pillow to use imresize")
+try: 
+    from scipy.misc.pilutil import imresize 
+except:
+    pass
+
+from scipy.misc import toimage
 from skimage.morphology import remove_small_holes, remove_small_objects
 from skimage import filters
 from skimage import img_as_float
